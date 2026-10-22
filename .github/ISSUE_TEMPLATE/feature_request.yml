@@ -1,0 +1,22 @@
+name: Feature Request
+description: Suggest something this mod could do, or an option it could offer.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your Idea
+      description: What you would like the mod to do.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why It Helps
+      description: What it would make easier or possible in your game.
+  - type: input
+    id: versions
+    attributes:
+      label: Minecraft Version and Loader
+      description: The version and loader you play on.
+      placeholder: "1.21.1 NeoForge"

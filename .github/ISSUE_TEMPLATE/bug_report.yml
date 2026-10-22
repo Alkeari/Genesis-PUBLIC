@@ -1,0 +1,68 @@
+name: Bug Report
+description: Something does not work as described, or the game crashes with this mod installed.
+labels: ["bug"]
+body:
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod Version
+      description: The version shown in your mod list or in the file name.
+      placeholder: "2.1.0"
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      placeholder: "1.21.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options:
+        - Fabric
+        - Forge
+        - NeoForge
+        - Other (name it under What Happened)
+    validations:
+      required: true
+  - type: dropdown
+    id: side
+    attributes:
+      label: Where It Happens
+      options:
+        - Singleplayer
+        - Multiplayer, on the server
+        - Multiplayer, on a client
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What Happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: The fewest steps that make it happen again, starting from a new world if you can.
+      placeholder: |
+        1. Create a new world
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other Mods
+      description: The modpack and its version, or the list of other mods installed. Does it still happen with only this mod and its dependencies?
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Upload `logs/latest.log`, and the crash report from `crash-reports/` if the game crashed, to https://mclo.gs and paste the links here.

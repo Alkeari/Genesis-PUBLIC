@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "${modId}",
+  "version": "${modVersion}",
+  "name": "${modName}",
+  "description": "${modDescription}",
+  "authors": ["${modAuthor}"],
+  "license": "${modLicense}",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.alkeari.genesis.fabric.GenesisFabric"
+    ],
+    "client": [
+      "com.alkeari.genesis.fabric.GenesisFabricClient"
+    ]
+  },
+  "mixins": [
+    "genesis.common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${depsFabricLoader}",
+    "fabric-api": "*",
+    "minecraft": "${minecraftRange}",
+    "cloth-config2": ">=${depsClothConfig}"
+  }
+}

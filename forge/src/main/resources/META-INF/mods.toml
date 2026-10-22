@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "${modLicense}"
+
+[[mods]]
+modId = "${modId}"
+version = "${modVersion}"
+displayName = "${modName}"
+authors = "${modAuthor}"
+logoFile = "icon.png"
+description = "${modDescription}"
+
+[[dependencies.${modId}]]
+modId = "forge"
+mandatory = true
+versionRange = "${loaderRange}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${modId}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraftRange}"
+ordering = "NONE"
+side = "BOTH"

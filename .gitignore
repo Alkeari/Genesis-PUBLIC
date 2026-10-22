@@ -1,0 +1,41 @@
+# Build output and Gradle state
+build/
+out/
+bin/
+.gradle/
+.loom/
+.architectury-transformer/
+remappedSrc/
+.mixin.out/
+.kotlin/
+
+# Minecraft dev-environment runtime
+run/
+logs/
+crash-reports/
+*.log
+*.hprof
+
+# IDE and local machine state
+.idea/
+*.iml
+*.ipr
+*.iws
+local.properties
+
+# Support folders (never built or committed)
+/.REFERENCE/
+/.Assets/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Editor state
+.vs/
+.vscode/
